@@ -146,9 +146,9 @@ header {
   content: "";
   position: absolute;
   top: 100%;
-  width: 20%;
-  height: 0.25rem;
-  left: 40%;
+  width: 21%;
+  height: 0.29rem;
+  left: 39%;
   background-color: rgb(226, 10, 100);
 }
 
@@ -156,4 +156,84 @@ header {
   word-spacing: 0.5rem;
   font-size: 2.5rem;
   line-height: 3rem;
+}
+.Edu-Cards .heading {
+  position: relative;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.Edu-Cards .heading::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 23%;
+  height: 0.29rem;
+  left: 38%;
+  background-color: rgb(226, 10, 100);
+}
+.Education-div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  width: 40rem;
+  height: 20rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgb(255, 0, 106);
+}
+.cards p {
+  font-size: 2rem;
+}
+.cards h1 {
+  letter-spacing: 0.2rem;
+}
+
+/*---------------------- skills components------------------- */
+.skills {
+  margin: 5rem 0;
+}
+.skill-heading {
+  position: relative;
+  text-align: center;
+}
+.skill-heading::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 15%;
+  height: 0.29rem;
+  left: 42.5%;
+  background-color: rgb(226, 10, 100);
+}
+.skills h2 {
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+.tecnologies {
+  width: 80%;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.image img {
+  width: 15rem;
+  height: 15rem;
 }
