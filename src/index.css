@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500;600&family=Poppins:wght@500&family=Roboto+Mono:ital,wght@0,500;1,400&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 html {
   font-size: 62.5%;
@@ -79,12 +82,17 @@ header {
   color: rgb(226, 10, 100);
   align-items: center;
   padding: 0.2rem;
+  transition: all 0.2s linear;
   box-shadow: 0.2rem 0.2rem 0.4rem rgb(255, 0, 106);
+}
+.btn-links:hover {
+  transform: scale(1.1);
 }
 
 /* home page css----------------- */
 .home {
   height: 90vh;
+  overflow: hidden;
   width: 100%;
   position: relative;
   background: rgba(21, 6, 109, 0.1);
@@ -104,9 +112,11 @@ header {
 @keyframes slide {
   0% {
     transform: translate(-50%, 150%);
+    opacity: 0;
   }
   100% {
     transform: translate(-50%, -60%);
+    opacity: 1;
   }
 }
 .heading {
@@ -205,7 +215,7 @@ header {
   gap: 1.5rem;
   text-align: center;
   width: 40rem;
-  height: 20rem;
+  height: 25rem;
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0.2rem 0.2rem 0.4rem rgb(255, 0, 106);
@@ -339,4 +349,121 @@ form {
 .sub-detail .btn {
   border-color: rgb(6, 207, 6);
   background-color: rgb(114, 253, 114);
+}
+
+/*====================== product page css===================== */
+
+.my-projects {
+  animation: visiblelity 1.5s linear;
+}
+@keyframes visiblelity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.project-heading {
+  margin: 5rem 0;
+}
+.project-heading .heading {
+  text-align: center;
+  position: relative;
+}
+
+.project-heading .heading::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 20%;
+  height: 0.29rem;
+  left: 40%;
+  background-color: rgb(226, 10, 100);
+}
+.project-card {
+  width: 80%;
+  margin: auto;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgb(226, 10, 100);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+}
+.sub-project-heading {
+  text-align: center;
+  color: rgb(226, 10, 100);
+  font-size: 1.2rem;
+}
+.project-sub-details {
+  margin: 2rem 0;
+}
+.project-sub-details h2 {
+  color: rgb(226, 10, 100);
+  font-size: 2rem;
+  padding-top: 0.8rem;
+}
+.feature-list {
+  margin-bottom: 0.5rem;
+}
+span {
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+.pera {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+.project-sub-details .btn {
+  text-decoration: none;
+  color: black;
+}
+
+/* =========================media quary ============================= */
+
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 50%;
+  }
+  .tecnologies {
+    justify-content: center;
+  }
+  .navbar-list {
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 40.5%;
+  }
+  .contact-details {
+    flex-direction: column;
+  }
+  .details {
+    margin-left: 1rem;
+  }
+  .navbar-list {
+    gap: 2rem;
+  }
+  .my_logo h1 {
+    letter-spacing: 0.8rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .navbar-list {
+    gap: 1rem;
+  }
+  .my_logo h1 {
+    letter-spacing: 0.2rem;
+  }
+  .links {
+    gap: 0.2rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 35.5%;
+  }
 }
