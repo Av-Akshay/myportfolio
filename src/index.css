@@ -131,10 +131,25 @@ header {
 }
 
 /*-------------------- About page css----------------- */
+.about-me {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  animation: aboutPage 1s linear;
+}
+@keyframes aboutPage {
+  0% {
+    top: 50vh;
+  }
+  100% {
+    top: 10vh;
+  }
+}
+
 .summary-div {
   width: 80%;
   text-align: center;
-  margin: 8rem auto;
+  margin: 0 auto 5rem auto;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -204,7 +219,8 @@ header {
 
 /*---------------------- skills components------------------- */
 .skills {
-  margin: 5rem 0;
+  margin: 5rem 0 0 0;
+  padding-bottom: 5rem;
 }
 .skill-heading {
   position: relative;
@@ -236,4 +252,91 @@ header {
 .image img {
   width: 15rem;
   height: 15rem;
+}
+
+/*=================== contact component =================== */
+.contact {
+  width: 90%;
+  margin: auto;
+  height: 90vh;
+  position: relative;
+}
+.contact-section {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-section .heading {
+  position: relative;
+}
+.contact-section .heading::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 34%;
+  height: 0.29rem;
+  left: 33%;
+  background-color: rgb(226, 10, 100);
+}
+.contact h1 {
+  text-align: center;
+}
+.contact-details {
+  justify-content: space-between;
+  gap: 10rem;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+.details {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  animation: detail 1s linear;
+}
+@keyframes detail {
+  0% {
+    translate: -30rem 0rem;
+  }
+  100% {
+    translate: 0rem 0rem;
+  }
+}
+
+.details p {
+  font-size: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: form 1s linear;
+}
+@keyframes form {
+  0% {
+    translate: 30rem 0rem;
+  }
+  100% {
+    translate: 0rem 0rem;
+  }
+}
+
+.input-filds {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+}
+
+.sub-detail {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+.sub-detail .btn {
+  border-color: rgb(6, 207, 6);
+  background-color: rgb(114, 253, 114);
 }

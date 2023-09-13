@@ -5,7 +5,7 @@ import Skills from "../components/aboutPageComponents/Skills";
 
 const About = () => {
   return (
-    <div>
+    <div className="about-me">
       <Summary />
       <Education />
       <Skills />
