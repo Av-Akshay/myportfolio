@@ -7,7 +7,7 @@ const GoogleKeep = () => {
       <div>
         <h1>3. Project Title: Google Keep Clone</h1>
       </div>
-      <div>
+      <div className="project-details">
         <div className="project-sub-details">
           <h2>Project Description :</h2>
           <p className="pera">

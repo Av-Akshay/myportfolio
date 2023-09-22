@@ -1,27 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const SchoolData = () => {
+const TodoList = () => {
   return (
     <div className="project-card">
       <div>
-        <h1>2. Project Title: School Student List</h1>
+        <h1>4. Project Title: To Do List</h1>
       </div>
       <div className="project-details">
         <div className="project-sub-details">
           <h2>Project Description :</h2>
           <p className="pera">
-            This website is used to store the Student information of various
-            School or colleges. This website is full responsive we can open this
-            into laptop , tablet and smartPhone also.
+            This website is used to helps you organize tasks, prioritize
+            activities, and stay focused on what needs to be done, enhancing
+            productivity and reducing stress.
           </p>
           <h2>
             visit:
-            <NavLink
-              className="btn"
-              to="https://chauhanschoollist.netlify.app/"
-            >
-              Student Lists
+            <NavLink className="btn" to="https://chauhanstodolist.netlify.app/">
+              To Do List
             </NavLink>
           </h2>
         </div>
@@ -31,9 +28,8 @@ const SchoolData = () => {
             <li className="feature-list">
               <span> Responsive Design:</span>
               <p className="pera">
-                The project is responsive, ensuring a consistent and enjoyable
-                experience on various devices including desktops, tablets, and
-                smartphones.
+                The project is fully responsive, enjoyable experience on various
+                devices including desktops, tablets, and smartphones.
               </p>
             </li>
             <li className="feature-list">
@@ -48,20 +44,6 @@ const SchoolData = () => {
               <p className="pera">
                 Redux-persist is used to store the state even when we reload the
                 page.
-              </p>
-            </li>
-            <li className="feature-list">
-              <span> School List</span>
-              <p className="pera">
-                Display a list of School and Colleges name with delete and edit
-                button. We can delete or edit the school or college name.
-              </p>
-            </li>
-            <li className="feature-list">
-              <span> Student List</span>
-              <p className="pera">
-                Display a list of Students which have personal information about
-                students. We can also delete or edit the students information.
               </p>
             </li>
           </ul>
@@ -79,4 +61,5 @@ const SchoolData = () => {
     </div>
   );
 };
-export default SchoolData;
+
+export default TodoList;
