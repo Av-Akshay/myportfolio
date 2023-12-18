@@ -129,10 +129,12 @@ header {
   letter-spacing: 0.2rem;
 }
 .btn {
+  display: inline-block;
   padding: 0.5rem 1.5rem;
   background-color: pink;
   border-radius: 0.5rem;
   border: 2px solid rgb(226, 10, 100);
+  margin: 0.5rem;
 }
 .btn a {
   text-decoration: none;
@@ -442,6 +444,9 @@ span {
   html {
     font-size: 40.5%;
   }
+  header {
+    width: 98%;
+  }
   .contact-details {
     flex-direction: column;
   }
@@ -470,5 +475,8 @@ span {
 @media screen and (max-width: 300px) {
   html {
     font-size: 35.5%;
+  }
+  .my_logo h1 {
+    letter-spacing: 0.1rem;
   }
 }

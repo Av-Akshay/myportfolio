@@ -18,7 +18,7 @@ const Ecommerce = () => {
             explore various products.
           </p>
           <h2>
-            visit:
+            visit:-
             <NavLink className="btn" to="https://chauhanstore.netlify.app/">
               My Store
             </NavLink>

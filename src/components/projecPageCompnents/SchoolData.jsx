@@ -16,7 +16,7 @@ const SchoolData = () => {
             into laptop , tablet and smartPhone also.
           </p>
           <h2>
-            visit:
+            visit:-
             <NavLink
               className="btn"
               to="https://chauhanschoollist.netlify.app/"
