@@ -21,12 +21,17 @@ const Menu = () => {
       </ul>
       <div className="links">
         <NavLink
+          target="_blank"
           className="btn-links"
           to="https://www.linkedin.com/in/akshay-chauhan-08b613224"
         >
           <AiFillLinkedin />
         </NavLink>
-        <NavLink className="btn-links" to="https://github.com/Av-Akshay">
+        <NavLink
+          target="_blank"
+          className="btn-links"
+          to="https://github.com/Av-Akshay"
+        >
           <AiFillGithub />
         </NavLink>
       </div>
